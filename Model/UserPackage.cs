@@ -4,8 +4,8 @@
     {
         public int Id { get; set; }
         public int PackageId { get; set; }
-        public bool isExpired { get; set; }       
-        public DateOnly ExpireDate { get; set; }
+        public int isExpired { get; set; }       
+        public DateTime ExpireDate { get; set; }
         public int RemainingCredit { get; set; }
         
     }
