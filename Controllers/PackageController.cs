@@ -36,7 +36,7 @@ namespace BookingApp.Controllers
         public IActionResult GetPurchasePackage(int Userid)
         {
 
-            var ObjUser = dbContext.Users.FirstOrDefault(x => x.UserId == Userid);
+            var ObjUser = dbContext.UserPackages.FirstOrDefault(x => x.Id == Userid);
             if (ObjUser != null)
             {
                 return Ok(ObjUser);
