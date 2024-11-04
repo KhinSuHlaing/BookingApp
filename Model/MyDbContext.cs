@@ -14,5 +14,7 @@ namespace BookingApp.Model
         public DbSet<Package> Packages { get; set; }
 
         public DbSet<Schedule> Schedules { get; set; }
+
+        public DbSet<UserPackage> UserPackages { get; set; }
     }
 }

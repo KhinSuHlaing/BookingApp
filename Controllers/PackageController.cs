@@ -30,5 +30,21 @@ namespace BookingApp.Controllers
                 return NoContent();
             }
         }
+
+        [HttpGet]
+        [Route("GetPurchasePackage")]
+        public IActionResult GetPurchasePackage(int Userid)
+        {
+
+            var ObjUser = dbContext.Users.FirstOrDefault(x => x.UserId == Userid);
+            if (ObjUser != null)
+            {
+                return Ok(ObjUser);
+            }
+            else
+            {
+                return NoContent();
+            }
+        }
     }
 }
